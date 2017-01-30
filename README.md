@@ -13,6 +13,7 @@ hi
 
 ## /sendbc
 **Permission:** *send.broadcast*
+
 Just like `/send`, but broadcasts instead.
 
 **Usage:** `/send (color) message`
@@ -24,6 +25,7 @@ hi everyone
 
 ### /sendas
 **Permission:** *send.broadcast.impersonate*
+
 A variation of `/sendbc`, this command mimics the player's chat.
 
 Just like `/send`, but broadcasts instead.
