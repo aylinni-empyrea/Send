@@ -2,6 +2,7 @@
 Just send text.
 
 ## /send
+**Permission:** *send*
 
 **Usage:** `/send (color) target message`
 **Example:** `/send 255,100,100 newy hi`
@@ -11,7 +12,7 @@ hi
 ```
 
 ## /sendbc
-
+**Permission:** *send.broadcast*
 Just like `/send`, but broadcasts instead.
 
 **Usage:** `/send (color) message`
@@ -22,7 +23,7 @@ hi everyone
 ```
 
 ### /sendas
-
+**Permission:** *send.broadcast.impersonate*
 A variation of `/sendbc`, this command mimics the player's chat.
 
 Just like `/send`, but broadcasts instead.
