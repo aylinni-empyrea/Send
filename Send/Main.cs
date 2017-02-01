@@ -101,9 +101,9 @@ namespace Send
         var bcmessage = string.Join(" ", args.Parameters);
 
         TShock.Players.Where(p => p != null && p.Active && p.RealPlayer)
-          .ForEach(p => p.SendMessage(bcmessage.Replace("${player}", p.Name), color));
+          .ForEach(p => p.SendMessage(bcmessage.ReplaceVariables(args.Player.Name, p.Name), color));
 
-        TSPlayer.Server.SendMessage(bcmessage.Replace("${player}", "Server"), color);
+        TSPlayer.Server.SendMessage(bcmessage.ReplaceVariables(args.Player.Name, "Server"), color);
 
         //TShock.Utils.Broadcast(bcmessage, color);
         return;
@@ -145,7 +145,7 @@ namespace Send
 
       args.Parameters.RemoveRange(0, playerparam + 1);
 
-      var message = string.Join(" ", args.Parameters).Replace("${player}", tsplayer.Name);
+      var message = string.Join(" ", args.Parameters).ReplaceVariables(args.Player.Name, tsplayer.Name);
 
       if (impersonate)
       {
