@@ -49,18 +49,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="OTAPI">
-      <HintPath>..\..\_tshock\OTAPI.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\Desktop\PluginExtravaganza\Server\OTAPI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="TerrariaServer">
-      <HintPath>..\..\_tshock\TerrariaServer.exe</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\Desktop\PluginExtravaganza\Server\TerrariaServer.exe</HintPath>
     </Reference>
     <Reference Include="TShockAPI">
-      <HintPath>..\..\_tshock\ServerPlugins\TShockAPI.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\Desktop\PluginExtravaganza\Server\ServerPlugins\TShockAPI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

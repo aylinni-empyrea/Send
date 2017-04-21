@@ -7,11 +7,10 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using TerrariaApi.Server;
 using TShockAPI;
-using TShockAPI.DB;
 
 namespace Send
 {
-  [ApiVersion(2, 0)]
+  [ApiVersion(2, 1)]
   public class Send : TerrariaPlugin
   {
     private static Regex ColorRegex = new Regex(@"(\d{1,3}), ?(\d{1,3}), ?(\d{1,3})", RegexOptions.Compiled);
